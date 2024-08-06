@@ -1,0 +1,8 @@
+base_dir: 'set the absolute path to codetransbenchmark'
+output_dir: output
+dataset_dir: dataset
+config_dir: config
+logs_dir: logs
+testresults_dir: testresults
+postprocessing_reports_dir: postprocessing_reports
+temp_exec_dir: temp

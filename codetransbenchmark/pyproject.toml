@@ -1,0 +1,45 @@
+[project]
+name = "codetransbench"
+version = "0.0.1"
+authors = [
+  { name="Vera Kowalczuk", email="" },
+]
+description = "Benchmarking framework for source code translation between programming lanaguages via LLMs"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "matplotlib",
+    "pandas",
+    "python-dotenv",
+    "tiktoken",
+    "torch",
+    "tqdm",
+    "transformers",
+    "accelerate",
+    "einops",
+    "openpyxl",
+    "sentencepiece",
+    "protobuf"
+]
+
+[project.urls]
+Homepage = "https://github.com/ast-fortiss-tum/llm-code-translation"
+Issues = "https://github.com/ast-fortiss-tum/llm-code-translation"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["codetransbench*"]
+namespaces = true
