@@ -1,0 +1,885 @@
+dataset,model_name,template,source_lang,target_lang,result_1,target_filename
+codenet,llamafile_mistral,controlled_md,Go,C#,compile,135
+codenet,llamafile_mistral,controlled_md,Go,C#,incorrect,27
+codenet,llamafile_mistral,controlled_md,Go,C#,runtime,28
+codenet,llamafile_mistral,controlled_md,Go,C#,success,6
+codenet,llamafile_mistral,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_mistral,controlled_md,Go,Java,compile,132
+codenet,llamafile_mistral,controlled_md,Go,Java,incorrect,15
+codenet,llamafile_mistral,controlled_md,Go,Java,runtime,20
+codenet,llamafile_mistral,controlled_md,Go,Java,success,29
+codenet,llamafile_mistral,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_mistral,controlled_md,Go,Python,compile,57
+codenet,llamafile_mistral,controlled_md,Go,Python,incorrect,25
+codenet,llamafile_mistral,controlled_md,Go,Python,runtime,84
+codenet,llamafile_mistral,controlled_md,Go,Python,success,30
+codenet,llamafile_mistral,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_mistral,controlled_md,Go,Rust,compile,186
+codenet,llamafile_mistral,controlled_md,Go,Rust,incorrect,6
+codenet,llamafile_mistral,controlled_md,Go,Rust,runtime,2
+codenet,llamafile_mistral,controlled_md,Go,Rust,success,2
+codenet,llamafile_mistral,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_mistral,controlled_md,Java,C#,compile,167
+codenet,llamafile_mistral,controlled_md,Java,C#,incorrect,13
+codenet,llamafile_mistral,controlled_md,Java,C#,runtime,15
+codenet,llamafile_mistral,controlled_md,Java,C#,success,1
+codenet,llamafile_mistral,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_mistral,controlled_md,Java,Go,compile,165
+codenet,llamafile_mistral,controlled_md,Java,Go,incorrect,17
+codenet,llamafile_mistral,controlled_md,Java,Go,runtime,4
+codenet,llamafile_mistral,controlled_md,Java,Go,success,10
+codenet,llamafile_mistral,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_mistral,controlled_md,Java,Python,compile,20
+codenet,llamafile_mistral,controlled_md,Java,Python,incorrect,40
+codenet,llamafile_mistral,controlled_md,Java,Python,runtime,94
+codenet,llamafile_mistral,controlled_md,Java,Python,success,42
+codenet,llamafile_mistral,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_mistral,controlled_md,Java,Rust,compile,174
+codenet,llamafile_mistral,controlled_md,Java,Rust,incorrect,11
+codenet,llamafile_mistral,controlled_md,Java,Rust,runtime,11
+codenet,llamafile_mistral,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_mistral,controlled_md,Python,C#,compile,93
+codenet,llamafile_mistral,controlled_md,Python,C#,incorrect,41
+codenet,llamafile_mistral,controlled_md,Python,C#,runtime,27
+codenet,llamafile_mistral,controlled_md,Python,C#,success,38
+codenet,llamafile_mistral,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_mistral,controlled_md,Python,Go,compile,171
+codenet,llamafile_mistral,controlled_md,Python,Go,incorrect,14
+codenet,llamafile_mistral,controlled_md,Python,Go,runtime,4
+codenet,llamafile_mistral,controlled_md,Python,Go,success,10
+codenet,llamafile_mistral,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_mistral,controlled_md,Python,Java,compile,85
+codenet,llamafile_mistral,controlled_md,Python,Java,incorrect,24
+codenet,llamafile_mistral,controlled_md,Python,Java,runtime,22
+codenet,llamafile_mistral,controlled_md,Python,Java,success,68
+codenet,llamafile_mistral,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_mistral,controlled_md,Python,Rust,compile,187
+codenet,llamafile_mistral,controlled_md,Python,Rust,incorrect,4
+codenet,llamafile_mistral,controlled_md,Python,Rust,runtime,5
+codenet,llamafile_mistral,controlled_md,Python,Rust,success,3
+codenet,llamafile_mistral,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_mistral,controlled_md,Java,C#,compile,205
+avatar,llamafile_mistral,controlled_md,Java,C#,incorrect,5
+avatar,llamafile_mistral,controlled_md,Java,C#,runtime,25
+avatar,llamafile_mistral,controlled_md,Java,C#,success,12
+avatar,llamafile_mistral,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_mistral,controlled_md,Java,Go,compile,221
+avatar,llamafile_mistral,controlled_md,Java,Go,incorrect,10
+avatar,llamafile_mistral,controlled_md,Java,Go,runtime,7
+avatar,llamafile_mistral,controlled_md,Java,Go,success,9
+avatar,llamafile_mistral,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_mistral,controlled_md,Java,Python,compile,35
+avatar,llamafile_mistral,controlled_md,Java,Python,incorrect,37
+avatar,llamafile_mistral,controlled_md,Java,Python,runtime,149
+avatar,llamafile_mistral,controlled_md,Java,Python,success,26
+avatar,llamafile_mistral,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_mistral,controlled_md,Java,Rust,compile,240
+avatar,llamafile_mistral,controlled_md,Java,Rust,incorrect,3
+avatar,llamafile_mistral,controlled_md,Java,Rust,runtime,3
+avatar,llamafile_mistral,controlled_md,Java,Rust,success,1
+avatar,llamafile_mistral,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_mistral,controlled_md,Python,C#,compile,157
+avatar,llamafile_mistral,controlled_md,Python,C#,incorrect,42
+avatar,llamafile_mistral,controlled_md,Python,C#,runtime,28
+avatar,llamafile_mistral,controlled_md,Python,C#,success,22
+avatar,llamafile_mistral,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_mistral,controlled_md,Python,Go,compile,237
+avatar,llamafile_mistral,controlled_md,Python,Go,incorrect,8
+avatar,llamafile_mistral,controlled_md,Python,Go,runtime,2
+avatar,llamafile_mistral,controlled_md,Python,Go,success,2
+avatar,llamafile_mistral,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_mistral,controlled_md,Python,Java,compile,141
+avatar,llamafile_mistral,controlled_md,Python,Java,incorrect,47
+avatar,llamafile_mistral,controlled_md,Python,Java,runtime,42
+avatar,llamafile_mistral,controlled_md,Python,Java,success,19
+avatar,llamafile_mistral,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_mistral,controlled_md,Python,Rust,compile,242
+avatar,llamafile_mistral,controlled_md,Python,Rust,incorrect,5
+avatar,llamafile_mistral,controlled_md,Python,Rust,runtime,2
+avatar,llamafile_mistral,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_mistral,controlled_md,Python,C#,compile,8
+bithacks,llamafile_mistral,controlled_md,Python,C#,incorrect,2
+bithacks,llamafile_mistral,controlled_md,Python,C#,runtime,3
+bithacks,llamafile_mistral,controlled_md,Python,C#,unicode error,1
+bithacks,llamafile_mistral,controlled_md,Python,Go,compile,13
+bithacks,llamafile_mistral,controlled_md,Python,Go,incorrect,1
+bithacks,llamafile_mistral,controlled_md,Python,Java,compile,11
+bithacks,llamafile_mistral,controlled_md,Python,Java,incorrect,1
+bithacks,llamafile_mistral,controlled_md,Python,Java,success,1
+bithacks,llamafile_mistral,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_mistral,controlled_md,Python,Rust,compile,12
+bithacks,llamafile_mistral,controlled_md,Python,Rust,incorrect,1
+bithacks,llamafile_mistral,controlled_md,Python,Rust,unicode error,1
+codenet,llamafile_mixtral,controlled_md,Go,C#,compile,117
+codenet,llamafile_mixtral,controlled_md,Go,C#,incorrect,26
+codenet,llamafile_mixtral,controlled_md,Go,C#,runtime,36
+codenet,llamafile_mixtral,controlled_md,Go,C#,success,17
+codenet,llamafile_mixtral,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Go,Java,compile,52
+codenet,llamafile_mixtral,controlled_md,Go,Java,incorrect,23
+codenet,llamafile_mixtral,controlled_md,Go,Java,runtime,31
+codenet,llamafile_mixtral,controlled_md,Go,Java,success,90
+codenet,llamafile_mixtral,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Go,Python,compile,60
+codenet,llamafile_mixtral,controlled_md,Go,Python,incorrect,35
+codenet,llamafile_mixtral,controlled_md,Go,Python,runtime,50
+codenet,llamafile_mixtral,controlled_md,Go,Python,success,51
+codenet,llamafile_mixtral,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Go,Rust,compile,141
+codenet,llamafile_mixtral,controlled_md,Go,Rust,incorrect,22
+codenet,llamafile_mixtral,controlled_md,Go,Rust,runtime,18
+codenet,llamafile_mixtral,controlled_md,Go,Rust,success,15
+codenet,llamafile_mixtral,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Java,C#,compile,103
+codenet,llamafile_mixtral,controlled_md,Java,C#,incorrect,37
+codenet,llamafile_mixtral,controlled_md,Java,C#,runtime,41
+codenet,llamafile_mixtral,controlled_md,Java,C#,success,15
+codenet,llamafile_mixtral,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Java,Go,compile,134
+codenet,llamafile_mixtral,controlled_md,Java,Go,incorrect,26
+codenet,llamafile_mixtral,controlled_md,Java,Go,runtime,10
+codenet,llamafile_mixtral,controlled_md,Java,Go,success,26
+codenet,llamafile_mixtral,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Java,Python,compile,12
+codenet,llamafile_mixtral,controlled_md,Java,Python,incorrect,28
+codenet,llamafile_mixtral,controlled_md,Java,Python,runtime,87
+codenet,llamafile_mixtral,controlled_md,Java,Python,success,69
+codenet,llamafile_mixtral,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Java,Rust,compile,120
+codenet,llamafile_mixtral,controlled_md,Java,Rust,incorrect,11
+codenet,llamafile_mixtral,controlled_md,Java,Rust,runtime,32
+codenet,llamafile_mixtral,controlled_md,Java,Rust,success,33
+codenet,llamafile_mixtral,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_mixtral,controlled_md,Python,C#,compile,30
+codenet,llamafile_mixtral,controlled_md,Python,C#,incorrect,57
+codenet,llamafile_mixtral,controlled_md,Python,C#,runtime,11
+codenet,llamafile_mixtral,controlled_md,Python,C#,success,101
+codenet,llamafile_mixtral,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_mixtral,controlled_md,Python,Go,compile,153
+codenet,llamafile_mixtral,controlled_md,Python,Go,incorrect,7
+codenet,llamafile_mixtral,controlled_md,Python,Go,runtime,10
+codenet,llamafile_mixtral,controlled_md,Python,Go,success,29
+codenet,llamafile_mixtral,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_mixtral,controlled_md,Python,Java,compile,35
+codenet,llamafile_mixtral,controlled_md,Python,Java,incorrect,18
+codenet,llamafile_mixtral,controlled_md,Python,Java,runtime,21
+codenet,llamafile_mixtral,controlled_md,Python,Java,success,125
+codenet,llamafile_mixtral,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_mixtral,controlled_md,Python,Rust,compile,116
+codenet,llamafile_mixtral,controlled_md,Python,Rust,incorrect,13
+codenet,llamafile_mixtral,controlled_md,Python,Rust,runtime,7
+codenet,llamafile_mixtral,controlled_md,Python,Rust,success,63
+codenet,llamafile_mixtral,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_mixtral,controlled_md,Java,C#,compile,193
+avatar,llamafile_mixtral,controlled_md,Java,C#,incorrect,12
+avatar,llamafile_mixtral,controlled_md,Java,C#,runtime,22
+avatar,llamafile_mixtral,controlled_md,Java,C#,success,20
+avatar,llamafile_mixtral,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_mixtral,controlled_md,Java,Go,compile,179
+avatar,llamafile_mixtral,controlled_md,Java,Go,incorrect,35
+avatar,llamafile_mixtral,controlled_md,Java,Go,runtime,9
+avatar,llamafile_mixtral,controlled_md,Java,Go,success,24
+avatar,llamafile_mixtral,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_mixtral,controlled_md,Java,Python,compile,29
+avatar,llamafile_mixtral,controlled_md,Java,Python,incorrect,60
+avatar,llamafile_mixtral,controlled_md,Java,Python,runtime,101
+avatar,llamafile_mixtral,controlled_md,Java,Python,success,57
+avatar,llamafile_mixtral,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_mixtral,controlled_md,Java,Rust,compile,188
+avatar,llamafile_mixtral,controlled_md,Java,Rust,incorrect,17
+avatar,llamafile_mixtral,controlled_md,Java,Rust,runtime,31
+avatar,llamafile_mixtral,controlled_md,Java,Rust,success,11
+avatar,llamafile_mixtral,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_mixtral,controlled_md,Python,C#,compile,67
+avatar,llamafile_mixtral,controlled_md,Python,C#,incorrect,79
+avatar,llamafile_mixtral,controlled_md,Python,C#,runtime,35
+avatar,llamafile_mixtral,controlled_md,Python,C#,success,68
+avatar,llamafile_mixtral,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_mixtral,controlled_md,Python,Go,compile,215
+avatar,llamafile_mixtral,controlled_md,Python,Go,incorrect,14
+avatar,llamafile_mixtral,controlled_md,Python,Go,runtime,9
+avatar,llamafile_mixtral,controlled_md,Python,Go,success,11
+avatar,llamafile_mixtral,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_mixtral,controlled_md,Python,Java,compile,63
+avatar,llamafile_mixtral,controlled_md,Python,Java,incorrect,61
+avatar,llamafile_mixtral,controlled_md,Python,Java,runtime,46
+avatar,llamafile_mixtral,controlled_md,Python,Java,success,79
+avatar,llamafile_mixtral,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_mixtral,controlled_md,Python,Rust,compile,177
+avatar,llamafile_mixtral,controlled_md,Python,Rust,incorrect,23
+avatar,llamafile_mixtral,controlled_md,Python,Rust,runtime,19
+avatar,llamafile_mixtral,controlled_md,Python,Rust,success,30
+avatar,llamafile_mixtral,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_mixtral,controlled_md,Python,C#,compile,3
+bithacks,llamafile_mixtral,controlled_md,Python,C#,incorrect,7
+bithacks,llamafile_mixtral,controlled_md,Python,C#,success,3
+bithacks,llamafile_mixtral,controlled_md,Python,C#,unicode error,1
+bithacks,llamafile_mixtral,controlled_md,Python,Go,compile,7
+bithacks,llamafile_mixtral,controlled_md,Python,Go,incorrect,3
+bithacks,llamafile_mixtral,controlled_md,Python,Go,success,3
+bithacks,llamafile_mixtral,controlled_md,Python,Go,unicode error,1
+bithacks,llamafile_mixtral,controlled_md,Python,Java,compile,3
+bithacks,llamafile_mixtral,controlled_md,Python,Java,incorrect,3
+bithacks,llamafile_mixtral,controlled_md,Python,Java,runtime,1
+bithacks,llamafile_mixtral,controlled_md,Python,Java,success,6
+bithacks,llamafile_mixtral,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_mixtral,controlled_md,Python,Rust,compile,9
+bithacks,llamafile_mixtral,controlled_md,Python,Rust,incorrect,2
+bithacks,llamafile_mixtral,controlled_md,Python,Rust,runtime,1
+bithacks,llamafile_mixtral,controlled_md,Python,Rust,success,1
+bithacks,llamafile_mixtral,controlled_md,Python,Rust,unicode error,1
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,C#,compile,67
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,C#,incorrect,45
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,C#,runtime,51
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,C#,success,33
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Java,compile,42
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Java,incorrect,23
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Java,runtime,24
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Java,success,107
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Python,compile,18
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Python,incorrect,32
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Python,runtime,71
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Python,success,75
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Rust,compile,145
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Rust,incorrect,12
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Rust,runtime,16
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Rust,success,23
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,compile,110
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,incorrect,25
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,runtime,39
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,success,22
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,compile,145
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,incorrect,28
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,runtime,6
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,success,17
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,compile,14
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,incorrect,51
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,runtime,84
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,success,47
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,compile,126
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,incorrect,12
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,runtime,33
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,success,25
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,compile,41
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,incorrect,37
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,runtime,17
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,success,104
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,compile,145
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,incorrect,24
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,runtime,13
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,success,17
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,compile,32
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,incorrect,23
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,runtime,26
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,success,118
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,compile,119
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,incorrect,18
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,runtime,20
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,success,42
+codenet,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,compile,137
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,incorrect,17
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,runtime,49
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,success,44
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,compile,189
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,incorrect,37
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,runtime,7
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,success,14
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,compile,17
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,incorrect,83
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,runtime,92
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,success,55
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,compile,172
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,incorrect,18
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,runtime,45
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,success,12
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,compile,69
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,incorrect,70
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,runtime,41
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,success,69
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,compile,208
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,incorrect,29
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,runtime,6
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,success,6
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,compile,58
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,incorrect,75
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,runtime,45
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,success,71
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,compile,187
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,incorrect,16
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,runtime,24
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,success,22
+avatar,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,compile,6
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,incorrect,4
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,success,3
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,C#,unicode error,1
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,compile,13
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Go,incorrect,1
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,compile,5
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,runtime,4
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,success,4
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,compile,7
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,incorrect,1
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,success,5
+bithacks,llamafile_dolphin-2.6-mistral,controlled_md,Python,Rust,unicode error,1
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,C#,compile,74
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,C#,incorrect,38
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,C#,runtime,64
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,C#,success,20
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Java,compile,33
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Java,incorrect,21
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Java,runtime,30
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Java,success,112
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Python,compile,25
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Python,incorrect,18
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Python,runtime,73
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Python,success,80
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Rust,compile,120
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Rust,incorrect,8
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Rust,runtime,38
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Rust,success,30
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,compile,75
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,incorrect,44
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,runtime,62
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,success,15
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,compile,120
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,incorrect,41
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,runtime,8
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,success,27
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,compile,8
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,incorrect,26
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,runtime,92
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,success,70
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,compile,103
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,incorrect,10
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,runtime,47
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,success,36
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,compile,24
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,incorrect,30
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,runtime,22
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,success,123
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,compile,152
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,incorrect,14
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,runtime,6
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,success,27
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,compile,32
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,incorrect,11
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,runtime,18
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,success,138
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,compile,89
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,incorrect,11
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,runtime,19
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,success,80
+codenet,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,compile,90
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,incorrect,30
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,runtime,95
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,success,32
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,compile,184
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,incorrect,31
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,runtime,9
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,success,23
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,compile,9
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,incorrect,54
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,runtime,117
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,success,67
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,compile,150
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,incorrect,16
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,runtime,53
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,success,28
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,compile,68
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,incorrect,64
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,runtime,41
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,success,76
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,compile,195
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,incorrect,25
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,runtime,12
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,success,17
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,compile,44
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,incorrect,68
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,runtime,49
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,success,88
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,compile,132
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,incorrect,23
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,runtime,50
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,success,44
+avatar,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,compile,3
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,incorrect,6
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,success,4
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,C#,unicode error,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,compile,12
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,success,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Go,unicode error,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,compile,5
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,incorrect,3
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,runtime,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,success,4
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,compile,7
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,runtime,3
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,success,3
+bithacks,llamafile_dolphin-2.7-mixtral,controlled_md,Python,Rust,unicode error,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,C#,compile,125
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,C#,incorrect,20
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,C#,runtime,27
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,C#,success,12
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,C#,unicode error,16
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Java,compile,108
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Java,incorrect,34
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Java,runtime,20
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Java,success,22
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Java,unicode error,16
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Python,compile,84
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Python,incorrect,84
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Python,runtime,17
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Python,success,11
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Rust,compile,172
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Rust,incorrect,11
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Rust,runtime,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Go,Rust,unicode error,16
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,compile,143
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,incorrect,22
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,runtime,17
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,success,4
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,unicode error,14
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,compile,184
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,incorrect,2
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,runtime,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,unicode error,13
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,compile,93
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,incorrect,81
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,runtime,15
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,success,7
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,compile,181
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,incorrect,5
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,runtime,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,unicode error,13
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,compile,126
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,incorrect,22
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,runtime,35
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,success,16
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,compile,195
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,incorrect,3
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,runtime,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,compile,96
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,incorrect,33
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,runtime,42
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,success,28
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,compile,191
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,incorrect,6
+codenet,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,runtime,3
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,compile,227
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,incorrect,11
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,runtime,10
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,C#,unicode error,1
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,compile,240
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,incorrect,7
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,compile,141
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,incorrect,85
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,runtime,21
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,compile,243
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,incorrect,5
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Java,Rust,unicode error,1
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,compile,189
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,incorrect,21
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,runtime,31
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,success,8
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,compile,247
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,incorrect,3
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,compile,132
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,incorrect,41
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,runtime,64
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,success,12
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,compile,247
+avatar,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,incorrect,3
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,compile,11
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,C#,incorrect,3
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Go,compile,14
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,compile,8
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,runtime,5
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_dolphin-2.6-phi-2,controlled_md,Python,Rust,compile,14
+codenet,llamafile_phi3,controlled_md,Go,C#,compile,113
+codenet,llamafile_phi3,controlled_md,Go,C#,incorrect,57
+codenet,llamafile_phi3,controlled_md,Go,C#,runtime,25
+codenet,llamafile_phi3,controlled_md,Go,C#,success,1
+codenet,llamafile_phi3,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_phi3,controlled_md,Go,Java,compile,112
+codenet,llamafile_phi3,controlled_md,Go,Java,incorrect,15
+codenet,llamafile_phi3,controlled_md,Go,Java,runtime,47
+codenet,llamafile_phi3,controlled_md,Go,Java,success,22
+codenet,llamafile_phi3,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_phi3,controlled_md,Go,Python,compile,20
+codenet,llamafile_phi3,controlled_md,Go,Python,incorrect,26
+codenet,llamafile_phi3,controlled_md,Go,Python,runtime,97
+codenet,llamafile_phi3,controlled_md,Go,Python,success,53
+codenet,llamafile_phi3,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_phi3,controlled_md,Go,Rust,compile,193
+codenet,llamafile_phi3,controlled_md,Go,Rust,incorrect,3
+codenet,llamafile_phi3,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_phi3,controlled_md,Java,C#,compile,100
+codenet,llamafile_phi3,controlled_md,Java,C#,incorrect,39
+codenet,llamafile_phi3,controlled_md,Java,C#,runtime,54
+codenet,llamafile_phi3,controlled_md,Java,C#,success,3
+codenet,llamafile_phi3,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_phi3,controlled_md,Java,Go,compile,184
+codenet,llamafile_phi3,controlled_md,Java,Go,incorrect,11
+codenet,llamafile_phi3,controlled_md,Java,Go,success,1
+codenet,llamafile_phi3,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_phi3,controlled_md,Java,Python,compile,11
+codenet,llamafile_phi3,controlled_md,Java,Python,incorrect,26
+codenet,llamafile_phi3,controlled_md,Java,Python,runtime,99
+codenet,llamafile_phi3,controlled_md,Java,Python,success,60
+codenet,llamafile_phi3,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_phi3,controlled_md,Java,Rust,compile,166
+codenet,llamafile_phi3,controlled_md,Java,Rust,incorrect,16
+codenet,llamafile_phi3,controlled_md,Java,Rust,runtime,13
+codenet,llamafile_phi3,controlled_md,Java,Rust,success,1
+codenet,llamafile_phi3,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_phi3,controlled_md,Python,C#,compile,68
+codenet,llamafile_phi3,controlled_md,Python,C#,incorrect,49
+codenet,llamafile_phi3,controlled_md,Python,C#,runtime,17
+codenet,llamafile_phi3,controlled_md,Python,C#,success,65
+codenet,llamafile_phi3,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_phi3,controlled_md,Python,Go,compile,187
+codenet,llamafile_phi3,controlled_md,Python,Go,incorrect,9
+codenet,llamafile_phi3,controlled_md,Python,Go,runtime,2
+codenet,llamafile_phi3,controlled_md,Python,Go,success,1
+codenet,llamafile_phi3,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_phi3,controlled_md,Python,Java,compile,83
+codenet,llamafile_phi3,controlled_md,Python,Java,incorrect,16
+codenet,llamafile_phi3,controlled_md,Python,Java,runtime,44
+codenet,llamafile_phi3,controlled_md,Python,Java,success,56
+codenet,llamafile_phi3,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_phi3,controlled_md,Python,Rust,compile,156
+codenet,llamafile_phi3,controlled_md,Python,Rust,incorrect,13
+codenet,llamafile_phi3,controlled_md,Python,Rust,runtime,5
+codenet,llamafile_phi3,controlled_md,Python,Rust,success,25
+codenet,llamafile_phi3,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_phi3,controlled_md,Java,C#,compile,124
+avatar,llamafile_phi3,controlled_md,Java,C#,incorrect,29
+avatar,llamafile_phi3,controlled_md,Java,C#,runtime,91
+avatar,llamafile_phi3,controlled_md,Java,C#,success,3
+avatar,llamafile_phi3,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_phi3,controlled_md,Java,Go,compile,240
+avatar,llamafile_phi3,controlled_md,Java,Go,incorrect,7
+avatar,llamafile_phi3,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_phi3,controlled_md,Java,Python,compile,5
+avatar,llamafile_phi3,controlled_md,Java,Python,incorrect,40
+avatar,llamafile_phi3,controlled_md,Java,Python,runtime,167
+avatar,llamafile_phi3,controlled_md,Java,Python,success,35
+avatar,llamafile_phi3,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_phi3,controlled_md,Java,Rust,compile,234
+avatar,llamafile_phi3,controlled_md,Java,Rust,incorrect,10
+avatar,llamafile_phi3,controlled_md,Java,Rust,runtime,3
+avatar,llamafile_phi3,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_phi3,controlled_md,Python,C#,compile,132
+avatar,llamafile_phi3,controlled_md,Python,C#,incorrect,61
+avatar,llamafile_phi3,controlled_md,Python,C#,runtime,33
+avatar,llamafile_phi3,controlled_md,Python,C#,success,23
+avatar,llamafile_phi3,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_phi3,controlled_md,Python,Go,compile,240
+avatar,llamafile_phi3,controlled_md,Python,Go,incorrect,7
+avatar,llamafile_phi3,controlled_md,Python,Go,runtime,2
+avatar,llamafile_phi3,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_phi3,controlled_md,Python,Java,compile,122
+avatar,llamafile_phi3,controlled_md,Python,Java,incorrect,46
+avatar,llamafile_phi3,controlled_md,Python,Java,runtime,45
+avatar,llamafile_phi3,controlled_md,Python,Java,success,36
+avatar,llamafile_phi3,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_phi3,controlled_md,Python,Rust,compile,238
+avatar,llamafile_phi3,controlled_md,Python,Rust,incorrect,6
+avatar,llamafile_phi3,controlled_md,Python,Rust,runtime,4
+avatar,llamafile_phi3,controlled_md,Python,Rust,success,1
+avatar,llamafile_phi3,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_phi3,controlled_md,Python,C#,compile,6
+bithacks,llamafile_phi3,controlled_md,Python,C#,incorrect,6
+bithacks,llamafile_phi3,controlled_md,Python,C#,runtime,2
+bithacks,llamafile_phi3,controlled_md,Python,Go,compile,13
+bithacks,llamafile_phi3,controlled_md,Python,Go,incorrect,1
+bithacks,llamafile_phi3,controlled_md,Python,Java,compile,9
+bithacks,llamafile_phi3,controlled_md,Python,Java,success,4
+bithacks,llamafile_phi3,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_phi3,controlled_md,Python,Rust,compile,13
+bithacks,llamafile_phi3,controlled_md,Python,Rust,runtime,1
+codenet,ollama_llama3-8b,controlled_md,Go,C#,compile,151
+codenet,ollama_llama3-8b,controlled_md,Go,C#,incorrect,7
+codenet,ollama_llama3-8b,controlled_md,Go,C#,runtime,33
+codenet,ollama_llama3-8b,controlled_md,Go,C#,success,5
+codenet,ollama_llama3-8b,controlled_md,Go,C#,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Go,Java,compile,75
+codenet,ollama_llama3-8b,controlled_md,Go,Java,incorrect,13
+codenet,ollama_llama3-8b,controlled_md,Go,Java,runtime,37
+codenet,ollama_llama3-8b,controlled_md,Go,Java,success,71
+codenet,ollama_llama3-8b,controlled_md,Go,Java,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Go,Python,compile,11
+codenet,ollama_llama3-8b,controlled_md,Go,Python,incorrect,17
+codenet,ollama_llama3-8b,controlled_md,Go,Python,runtime,94
+codenet,ollama_llama3-8b,controlled_md,Go,Python,success,74
+codenet,ollama_llama3-8b,controlled_md,Go,Python,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Go,Rust,compile,138
+codenet,ollama_llama3-8b,controlled_md,Go,Rust,incorrect,13
+codenet,ollama_llama3-8b,controlled_md,Go,Rust,runtime,29
+codenet,ollama_llama3-8b,controlled_md,Go,Rust,success,16
+codenet,ollama_llama3-8b,controlled_md,Go,Rust,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Java,C#,compile,194
+codenet,ollama_llama3-8b,controlled_md,Java,C#,incorrect,2
+codenet,ollama_llama3-8b,controlled_md,Java,C#,runtime,1
+codenet,ollama_llama3-8b,controlled_md,Java,C#,unicode error,3
+codenet,ollama_llama3-8b,controlled_md,Java,Go,compile,184
+codenet,ollama_llama3-8b,controlled_md,Java,Go,incorrect,7
+codenet,ollama_llama3-8b,controlled_md,Java,Go,runtime,1
+codenet,ollama_llama3-8b,controlled_md,Java,Go,success,4
+codenet,ollama_llama3-8b,controlled_md,Java,Go,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Java,Python,compile,8
+codenet,ollama_llama3-8b,controlled_md,Java,Python,incorrect,30
+codenet,ollama_llama3-8b,controlled_md,Java,Python,runtime,100
+codenet,ollama_llama3-8b,controlled_md,Java,Python,success,58
+codenet,ollama_llama3-8b,controlled_md,Java,Python,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Java,Rust,compile,153
+codenet,ollama_llama3-8b,controlled_md,Java,Rust,incorrect,7
+codenet,ollama_llama3-8b,controlled_md,Java,Rust,runtime,18
+codenet,ollama_llama3-8b,controlled_md,Java,Rust,success,18
+codenet,ollama_llama3-8b,controlled_md,Java,Rust,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Python,C#,compile,40
+codenet,ollama_llama3-8b,controlled_md,Python,C#,incorrect,28
+codenet,ollama_llama3-8b,controlled_md,Python,C#,runtime,22
+codenet,ollama_llama3-8b,controlled_md,Python,C#,success,106
+codenet,ollama_llama3-8b,controlled_md,Python,C#,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Python,Go,compile,176
+codenet,ollama_llama3-8b,controlled_md,Python,Go,incorrect,4
+codenet,ollama_llama3-8b,controlled_md,Python,Go,runtime,8
+codenet,ollama_llama3-8b,controlled_md,Python,Go,success,8
+codenet,ollama_llama3-8b,controlled_md,Python,Go,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Python,Java,compile,46
+codenet,ollama_llama3-8b,controlled_md,Python,Java,incorrect,21
+codenet,ollama_llama3-8b,controlled_md,Python,Java,runtime,32
+codenet,ollama_llama3-8b,controlled_md,Python,Java,success,97
+codenet,ollama_llama3-8b,controlled_md,Python,Java,unicode error,4
+codenet,ollama_llama3-8b,controlled_md,Python,Rust,compile,100
+codenet,ollama_llama3-8b,controlled_md,Python,Rust,incorrect,18
+codenet,ollama_llama3-8b,controlled_md,Python,Rust,runtime,17
+codenet,ollama_llama3-8b,controlled_md,Python,Rust,success,61
+codenet,ollama_llama3-8b,controlled_md,Python,Rust,unicode error,4
+avatar,ollama_llama3-8b,controlled_md,Java,C#,compile,156
+avatar,ollama_llama3-8b,controlled_md,Java,C#,incorrect,8
+avatar,ollama_llama3-8b,controlled_md,Java,C#,runtime,46
+avatar,ollama_llama3-8b,controlled_md,Java,C#,success,21
+avatar,ollama_llama3-8b,controlled_md,Java,C#,unicode error,18
+avatar,ollama_llama3-8b,controlled_md,Java,Go,compile,205
+avatar,ollama_llama3-8b,controlled_md,Java,Go,incorrect,12
+avatar,ollama_llama3-8b,controlled_md,Java,Go,runtime,3
+avatar,ollama_llama3-8b,controlled_md,Java,Go,success,1
+avatar,ollama_llama3-8b,controlled_md,Java,Go,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Java,Python,compile,7
+avatar,ollama_llama3-8b,controlled_md,Java,Python,incorrect,28
+avatar,ollama_llama3-8b,controlled_md,Java,Python,runtime,128
+avatar,ollama_llama3-8b,controlled_md,Java,Python,success,58
+avatar,ollama_llama3-8b,controlled_md,Java,Python,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Java,Rust,compile,206
+avatar,ollama_llama3-8b,controlled_md,Java,Rust,incorrect,4
+avatar,ollama_llama3-8b,controlled_md,Java,Rust,runtime,8
+avatar,ollama_llama3-8b,controlled_md,Java,Rust,success,3
+avatar,ollama_llama3-8b,controlled_md,Java,Rust,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Python,C#,compile,90
+avatar,ollama_llama3-8b,controlled_md,Python,C#,incorrect,50
+avatar,ollama_llama3-8b,controlled_md,Python,C#,runtime,29
+avatar,ollama_llama3-8b,controlled_md,Python,C#,success,53
+avatar,ollama_llama3-8b,controlled_md,Python,C#,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Python,Go,compile,207
+avatar,ollama_llama3-8b,controlled_md,Python,Go,incorrect,8
+avatar,ollama_llama3-8b,controlled_md,Python,Go,runtime,4
+avatar,ollama_llama3-8b,controlled_md,Python,Go,success,3
+avatar,ollama_llama3-8b,controlled_md,Python,Go,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Python,Java,compile,74
+avatar,ollama_llama3-8b,controlled_md,Python,Java,incorrect,50
+avatar,ollama_llama3-8b,controlled_md,Python,Java,runtime,44
+avatar,ollama_llama3-8b,controlled_md,Python,Java,success,54
+avatar,ollama_llama3-8b,controlled_md,Python,Java,unicode error,28
+avatar,ollama_llama3-8b,controlled_md,Python,Rust,compile,174
+avatar,ollama_llama3-8b,controlled_md,Python,Rust,incorrect,26
+avatar,ollama_llama3-8b,controlled_md,Python,Rust,runtime,14
+avatar,ollama_llama3-8b,controlled_md,Python,Rust,success,8
+avatar,ollama_llama3-8b,controlled_md,Python,Rust,unicode error,28
+bithacks,ollama_llama3-8b,controlled_md,Python,C#,compile,6
+bithacks,ollama_llama3-8b,controlled_md,Python,C#,incorrect,4
+bithacks,ollama_llama3-8b,controlled_md,Python,C#,success,3
+bithacks,ollama_llama3-8b,controlled_md,Python,C#,unicode error,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Go,compile,12
+bithacks,ollama_llama3-8b,controlled_md,Python,Go,incorrect,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Go,unicode error,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Java,compile,5
+bithacks,ollama_llama3-8b,controlled_md,Python,Java,incorrect,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Java,runtime,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Java,success,6
+bithacks,ollama_llama3-8b,controlled_md,Python,Java,unicode error,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Rust,compile,9
+bithacks,ollama_llama3-8b,controlled_md,Python,Rust,incorrect,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Rust,runtime,2
+bithacks,ollama_llama3-8b,controlled_md,Python,Rust,success,1
+bithacks,ollama_llama3-8b,controlled_md,Python,Rust,unicode error,1
+codenet,llamafile_codestral,controlled_md,Go,C#,compile,9
+codenet,llamafile_codestral,controlled_md,Go,C#,incorrect,6
+codenet,llamafile_codestral,controlled_md,Go,C#,runtime,89
+codenet,llamafile_codestral,controlled_md,Go,C#,success,92
+codenet,llamafile_codestral,controlled_md,Go,C#,unicode error,4
+codenet,llamafile_codestral,controlled_md,Go,Java,compile,8
+codenet,llamafile_codestral,controlled_md,Go,Java,incorrect,14
+codenet,llamafile_codestral,controlled_md,Go,Java,runtime,7
+codenet,llamafile_codestral,controlled_md,Go,Java,success,167
+codenet,llamafile_codestral,controlled_md,Go,Java,unicode error,4
+codenet,llamafile_codestral,controlled_md,Go,Python,incorrect,8
+codenet,llamafile_codestral,controlled_md,Go,Python,runtime,71
+codenet,llamafile_codestral,controlled_md,Go,Python,success,117
+codenet,llamafile_codestral,controlled_md,Go,Python,unicode error,4
+codenet,llamafile_codestral,controlled_md,Go,Rust,compile,42
+codenet,llamafile_codestral,controlled_md,Go,Rust,incorrect,6
+codenet,llamafile_codestral,controlled_md,Go,Rust,runtime,53
+codenet,llamafile_codestral,controlled_md,Go,Rust,success,95
+codenet,llamafile_codestral,controlled_md,Go,Rust,unicode error,4
+codenet,llamafile_codestral,controlled_md,Java,C#,compile,23
+codenet,llamafile_codestral,controlled_md,Java,C#,incorrect,8
+codenet,llamafile_codestral,controlled_md,Java,C#,runtime,86
+codenet,llamafile_codestral,controlled_md,Java,C#,success,79
+codenet,llamafile_codestral,controlled_md,Java,C#,unicode error,4
+codenet,llamafile_codestral,controlled_md,Java,Go,compile,59
+codenet,llamafile_codestral,controlled_md,Java,Go,incorrect,34
+codenet,llamafile_codestral,controlled_md,Java,Go,runtime,4
+codenet,llamafile_codestral,controlled_md,Java,Go,success,99
+codenet,llamafile_codestral,controlled_md,Java,Go,unicode error,4
+codenet,llamafile_codestral,controlled_md,Java,Python,compile,2
+codenet,llamafile_codestral,controlled_md,Java,Python,incorrect,14
+codenet,llamafile_codestral,controlled_md,Java,Python,runtime,75
+codenet,llamafile_codestral,controlled_md,Java,Python,success,105
+codenet,llamafile_codestral,controlled_md,Java,Python,unicode error,4
+codenet,llamafile_codestral,controlled_md,Java,Rust,compile,33
+codenet,llamafile_codestral,controlled_md,Java,Rust,incorrect,10
+codenet,llamafile_codestral,controlled_md,Java,Rust,runtime,61
+codenet,llamafile_codestral,controlled_md,Java,Rust,success,92
+codenet,llamafile_codestral,controlled_md,Java,Rust,unicode error,4
+codenet,llamafile_codestral,controlled_md,Python,C#,compile,14
+codenet,llamafile_codestral,controlled_md,Python,C#,incorrect,14
+codenet,llamafile_codestral,controlled_md,Python,C#,runtime,2
+codenet,llamafile_codestral,controlled_md,Python,C#,success,169
+codenet,llamafile_codestral,controlled_md,Python,C#,unicode error,1
+codenet,llamafile_codestral,controlled_md,Python,Go,compile,66
+codenet,llamafile_codestral,controlled_md,Python,Go,incorrect,23
+codenet,llamafile_codestral,controlled_md,Python,Go,runtime,28
+codenet,llamafile_codestral,controlled_md,Python,Go,success,82
+codenet,llamafile_codestral,controlled_md,Python,Go,unicode error,1
+codenet,llamafile_codestral,controlled_md,Python,Java,compile,6
+codenet,llamafile_codestral,controlled_md,Python,Java,incorrect,12
+codenet,llamafile_codestral,controlled_md,Python,Java,runtime,7
+codenet,llamafile_codestral,controlled_md,Python,Java,success,174
+codenet,llamafile_codestral,controlled_md,Python,Java,unicode error,1
+codenet,llamafile_codestral,controlled_md,Python,Rust,compile,29
+codenet,llamafile_codestral,controlled_md,Python,Rust,incorrect,7
+codenet,llamafile_codestral,controlled_md,Python,Rust,runtime,12
+codenet,llamafile_codestral,controlled_md,Python,Rust,success,151
+codenet,llamafile_codestral,controlled_md,Python,Rust,unicode error,1
+avatar,llamafile_codestral,controlled_md,Java,C#,compile,20
+avatar,llamafile_codestral,controlled_md,Java,C#,incorrect,12
+avatar,llamafile_codestral,controlled_md,Java,C#,runtime,106
+avatar,llamafile_codestral,controlled_md,Java,C#,success,109
+avatar,llamafile_codestral,controlled_md,Java,C#,unicode error,2
+avatar,llamafile_codestral,controlled_md,Java,Go,compile,100
+avatar,llamafile_codestral,controlled_md,Java,Go,incorrect,40
+avatar,llamafile_codestral,controlled_md,Java,Go,runtime,11
+avatar,llamafile_codestral,controlled_md,Java,Go,success,96
+avatar,llamafile_codestral,controlled_md,Java,Go,unicode error,2
+avatar,llamafile_codestral,controlled_md,Java,Python,compile,9
+avatar,llamafile_codestral,controlled_md,Java,Python,incorrect,35
+avatar,llamafile_codestral,controlled_md,Java,Python,runtime,57
+avatar,llamafile_codestral,controlled_md,Java,Python,success,146
+avatar,llamafile_codestral,controlled_md,Java,Python,unicode error,2
+avatar,llamafile_codestral,controlled_md,Java,Rust,compile,59
+avatar,llamafile_codestral,controlled_md,Java,Rust,incorrect,26
+avatar,llamafile_codestral,controlled_md,Java,Rust,runtime,72
+avatar,llamafile_codestral,controlled_md,Java,Rust,success,90
+avatar,llamafile_codestral,controlled_md,Java,Rust,unicode error,2
+avatar,llamafile_codestral,controlled_md,Python,C#,compile,23
+avatar,llamafile_codestral,controlled_md,Python,C#,incorrect,52
+avatar,llamafile_codestral,controlled_md,Python,C#,runtime,33
+avatar,llamafile_codestral,controlled_md,Python,C#,success,141
+avatar,llamafile_codestral,controlled_md,Python,C#,unicode error,1
+avatar,llamafile_codestral,controlled_md,Python,Go,compile,96
+avatar,llamafile_codestral,controlled_md,Python,Go,incorrect,42
+avatar,llamafile_codestral,controlled_md,Python,Go,runtime,42
+avatar,llamafile_codestral,controlled_md,Python,Go,success,69
+avatar,llamafile_codestral,controlled_md,Python,Go,unicode error,1
+avatar,llamafile_codestral,controlled_md,Python,Java,compile,14
+avatar,llamafile_codestral,controlled_md,Python,Java,incorrect,65
+avatar,llamafile_codestral,controlled_md,Python,Java,runtime,30
+avatar,llamafile_codestral,controlled_md,Python,Java,success,140
+avatar,llamafile_codestral,controlled_md,Python,Java,unicode error,1
+avatar,llamafile_codestral,controlled_md,Python,Rust,compile,61
+avatar,llamafile_codestral,controlled_md,Python,Rust,incorrect,42
+avatar,llamafile_codestral,controlled_md,Python,Rust,runtime,41
+avatar,llamafile_codestral,controlled_md,Python,Rust,success,105
+avatar,llamafile_codestral,controlled_md,Python,Rust,unicode error,1
+bithacks,llamafile_codestral,controlled_md,Python,C#,incorrect,2
+bithacks,llamafile_codestral,controlled_md,Python,C#,runtime,1
+bithacks,llamafile_codestral,controlled_md,Python,C#,success,10
+bithacks,llamafile_codestral,controlled_md,Python,C#,unicode error,1
+bithacks,llamafile_codestral,controlled_md,Python,Go,compile,5
+bithacks,llamafile_codestral,controlled_md,Python,Go,incorrect,2
+bithacks,llamafile_codestral,controlled_md,Python,Go,runtime,1
+bithacks,llamafile_codestral,controlled_md,Python,Go,success,5
+bithacks,llamafile_codestral,controlled_md,Python,Go,unicode error,1
+bithacks,llamafile_codestral,controlled_md,Python,Java,compile,1
+bithacks,llamafile_codestral,controlled_md,Python,Java,incorrect,2
+bithacks,llamafile_codestral,controlled_md,Python,Java,runtime,4
+bithacks,llamafile_codestral,controlled_md,Python,Java,success,6
+bithacks,llamafile_codestral,controlled_md,Python,Java,unicode error,1
+bithacks,llamafile_codestral,controlled_md,Python,Rust,compile,4
+bithacks,llamafile_codestral,controlled_md,Python,Rust,runtime,3
+bithacks,llamafile_codestral,controlled_md,Python,Rust,success,6
+bithacks,llamafile_codestral,controlled_md,Python,Rust,unicode error,1

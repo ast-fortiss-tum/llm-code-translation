@@ -1,0 +1,44 @@
+# Set a 3/4 aspect ratio with automatic layout.
+figure.figsize: 8., 6.
+
+figure.autolayout: true
+
+### FONTS
+font.family: serif
+font.weight: light
+font.size: 12
+
+### FIGURE
+figure.facecolor: white
+figure.dpi: 100
+figure.titlesize: 18
+figure.titleweight: bold
+
+### LINES
+lines.linewidth: 1.5
+
+### PATCHES
+patch.facecolor: 0072B2
+
+### LEGEND
+legend.fontsize: 12
+
+### TICKS
+xtick.direction: out
+xtick.minor.visible: True
+xtick.labelsize: 14
+ytick.direction: out
+ytick.minor.visible: True
+ytick.labelsize: 14
+
+### AXES
+axes.grid: False
+axes.facecolor: white
+axes.linewidth: 1.0
+axes.titlesize: 18
+axes.titleweight: light
+axes.labelsize: 12
+axes.labelweight: bold
+axes.spines.top: True
+axes.spines.right: True
+axes.prop_cycle: cycler('color', ['0065BD', '98C6EA', '000000', '64A0C8', 'a2ad00', '999999', 'e37222', 'dad7cb', '0A2D57', '14519A', 'C2D7EF', '6A757E'])
