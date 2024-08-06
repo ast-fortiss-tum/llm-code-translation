@@ -1,0 +1,39 @@
+[project]
+name = "codetrans"
+version = "0.0.1"
+authors = [
+  { name="Vera Kowalczuk", email="" },
+]
+description = "Source code translation between programming lanaguages via LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "numpy",
+    "langchain",
+    "langchain_community",
+    "torch",
+    "transformers",
+    "einops",
+    "bidict",
+    "comment_parser@git+https://github.com/VeraKowalczuk/comment_parser.git",
+    "python-magic-bin; platform_system=='Windows'",
+    "sentencepiece"
+]
+
+[project.urls]
+Homepage = "https://github.com/ast-fortiss-tum/llm-code-translation"
+Issues = "https://github.com/ast-fortiss-tum/llm-code-translation"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+
+
