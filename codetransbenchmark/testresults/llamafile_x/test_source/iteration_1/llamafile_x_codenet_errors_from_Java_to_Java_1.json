@@ -1,0 +1,1 @@
+{"compile": [["s233008404.java", "C:\\home\\ma_code\\codetransbenchmark\\dataset\\codenet\\Java\\Cleaned\\s233008404.java:103: error: invalid method declaration; return type required\r\n\t\tpublic FastScanner() {\r\n\t\t       ^\r\n1 error\r\n"]], "runtime": [], "incorrect": [], "token_exceeded": []}
