@@ -13,7 +13,7 @@ from codetrans.codetrans_config import (
     TORCH_MODELS_PATH,
 )
 from langchain_core.language_models.llms import LLM
-from langchain_community.llms.ollama import Ollama
+from langchain_ollama import ChatOllama
 from langchain_community.llms.llamafile import Llamafile
 from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
@@ -61,6 +61,7 @@ OLLAMA_CTX_SIZE = {
     "llama3": 8000,
     "phi3": 4000,
     "codestral": 32000,
+    "gemma-3": 131000
 }
 
 
@@ -104,12 +105,12 @@ def llm_wrapper(
     hardware_mode: str = "cpu",
     max_output_tokens: int = 1200,
     llm_settings: LLMSettings | None = None,
-) -> Ollama | Llamafile | HuggingFacePipeline:
+) -> ChatOllama | Llamafile | HuggingFacePipeline:
 
     if abstraction_framework == "ollama":
         # Raises ValidationError if the input data cannot be parsed to form a valid model.
         if llm_settings:
-            llm = Ollama(
+            llm = ChatOllama(
                 model=model_name,
                 num_ctx=OLLAMA_CTX_SIZE[model_name],
                 num_predict=-2,
@@ -120,7 +121,7 @@ def llm_wrapper(
             )
         else:
             # num_predict = -2 --> fill the context window
-            llm = Ollama(model=model_name, num_ctx=OLLAMA_CTX_SIZE[model_name], num_predict=-2)
+            llm = ChatOllama(model=model_name, num_ctx=OLLAMA_CTX_SIZE[model_name], num_predict=-2)
         print("Serving model via Ollama")
     elif abstraction_framework == "llamafile":
         if not llamafile_server_for_model_exists(model_name):

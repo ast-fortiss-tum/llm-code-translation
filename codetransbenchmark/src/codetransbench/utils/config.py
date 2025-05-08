@@ -23,6 +23,10 @@ def load_config(file_str: str = ".\codetransbenchmark\config\config.yaml") -> Co
     print(f"Loaded config from file {file_str}: config: {config_dict}")
 
     base_dir = Path(config_dict["base_dir"])
+    if base_dir == "set the absolute path to codetransbenchmark":
+        raise Exception(
+            "set the absolute path to codetransbenchmark in config/config.yaml"
+        )
 
     return Config(
         base_dir=base_dir,
@@ -31,6 +35,7 @@ def load_config(file_str: str = ".\codetransbenchmark\config\config.yaml") -> Co
         config_dir=base_dir / str(config_dict["config_dir"]),
         logs_dir=base_dir / str(config_dict["logs_dir"]),
         testresults_dir=base_dir / str(config_dict["testresults_dir"]),
-        postprocessing_reports_dir=base_dir / str(config_dict["postprocessing_reports_dir"]),
+        postprocessing_reports_dir=base_dir
+        / str(config_dict["postprocessing_reports_dir"]),
         temp_exec_dir=base_dir / str(config_dict["temp_exec_dir"]),
     )

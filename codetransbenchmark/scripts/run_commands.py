@@ -6,7 +6,10 @@ import time
 import regex
 
 
-from codetransbench.execution.execution import execute_translations, execute_source_tests
+from codetransbench.execution.execution import (
+    execute_translations,
+    execute_source_tests,
+)
 from codetransbench.translation.clean_generations import clean_generations
 from codetransbench.translation.translate_open_source import main as translation_main
 from codetransbench.translation.repair import main as repair_main
@@ -71,7 +74,9 @@ def language_pairs_for_batching(
                         pattern=r"source_lang=[\"\']([^\s]*)[\"\'], target_lang",
                         string=line,
                     )
-                    found_target = regex.findall(pattern=r"target_lang=[\"\']([^\s]*)[\"\'], ", string=line)
+                    found_target = regex.findall(
+                        pattern=r"target_lang=[\"\']([^\s]*)[\"\'], ", string=line
+                    )
                     pair = (found_source[0], found_target[0])
                     executed_pairs.add(pair)
 
@@ -153,7 +158,9 @@ def iterate_task_over_dataset(
                         report_dir=test_output,
                         attempt=attempt,
                     )
-                    logged_batch_task(config, logfile, task, execute_translations, exec_args)
+                    logged_batch_task(
+                        config, logfile, task, execute_translations, exec_args
+                    )
             case "test_source":
                 test_output = str(config.testresults_dir)
                 for source_lang, source_lang in set(
@@ -179,7 +186,9 @@ def iterate_task_over_dataset(
                         report_dir=test_output,
                         attempt=attempt,
                     )
-                    logged_batch_task(config, logfile, task, execute_source_tests, exec_args)
+                    logged_batch_task(
+                        config, logfile, task, execute_source_tests, exec_args
+                    )
             case "repair":
                 for source_lang, target_lang in language_pairs_for_batching(
                     logfile,
@@ -218,7 +227,9 @@ if __name__ == "__main__":
         type=str,
     )
     parser.add_argument("model", help="Name of the model to use.", type=str)
-    parser.add_argument("template", help="Name of the prompt template to use.", type=str)
+    parser.add_argument(
+        "template", help="Name of the prompt template to use.", type=str
+    )
     parser.add_argument("-a", "--attempt", default=1, help="Attempt", type=int)
     parser.add_argument(
         "-opp",
@@ -250,7 +261,12 @@ if __name__ == "__main__":
         type=str,
     )
     parser.add_argument(
-        "-e", "--engine", help="Name of the model engine to use.", required=False, type=str, default="llamafile"
+        "-e",
+        "--engine",
+        help="Name of the model engine to use.",
+        required=False,
+        type=str,
+        default="llamafile",
     )
 
     args = parser.parse_args()
@@ -270,7 +286,7 @@ if __name__ == "__main__":
 
     logfile = f"logfile_for_python_batching_{model_name}.txt"
 
-    datasets = ["codenet", "avatar", "evalplus", "bithacks"]
+    datasets = ["codenet", "avatar", "bithacks"]  # , "evalplus", "geeks"]
     if dataset and (dataset in datasets):
         datasets = [dataset.lower()]
     if args.mini_benchmark:
@@ -287,7 +303,10 @@ if __name__ == "__main__":
 
     if opp_type != "complex":
         # change the directories to the output postprocessing strategy
-        config.testresults_dir = config.testresults_dir.parent / f"{config.testresults_dir.stem}_{opp_type}_pp"
+        config.testresults_dir = (
+            config.testresults_dir.parent
+            / f"{config.testresults_dir.stem}_{opp_type}_pp"
+        )
         config.cleaned_dir_name = f"{config.cleaned_dir_name}_{opp_type}_pp"
 
     iterate_task_over_dataset(

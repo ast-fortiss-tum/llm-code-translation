@@ -15,8 +15,10 @@ def setup_logging(task, model, config: Config):
     logs_dir_parts = config.logs_dir.parts
     logs_dir_parts = [x.replace("\\", "") for x in logs_dir_parts]
     logs_directory = "/".join(list(logs_dir_parts))
-    normal = "/".join([logs_directory, f"{task}_{model}.log"])
-    warnings = "/".join([logs_directory, f"{task}_{model}_errors.log"])
+    normal = "/".join([logs_directory, f"{task}_{model}.log"]).replace("//", "/")
+    warnings = "/".join([logs_directory, f"{task}_{model}_errors.log"]).replace(
+        "//", "/"
+    )
     print(normal, warnings)
 
     logging.config.fileConfig(

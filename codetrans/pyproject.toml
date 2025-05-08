@@ -2,7 +2,7 @@
 name = "codetrans"
 version = "0.0.1"
 authors = [
-  { name="Vera Kowalczuk", email="" },
+  { name="Vera Kowalczuk", email="vera.kowalczuk@tum.de" },
 ]
 description = "Source code translation between programming lanaguages via LLMs"
 readme = "README.md"
@@ -17,6 +17,7 @@ dependencies = [
     "numpy",
     "langchain",
     "langchain_community",
+    "langchain_ollama",
     "torch",
     "transformers",
     "einops",

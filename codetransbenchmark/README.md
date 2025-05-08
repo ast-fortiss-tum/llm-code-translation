@@ -38,7 +38,6 @@ Please unzip the `dataset.zip` file. After unzipping, you should see the followi
 codetransbenchmark
 ├── dataset
     ├── avatar
-    ├── basicbench
     ├── bithacks
     ├── codenet
     ├── geeks

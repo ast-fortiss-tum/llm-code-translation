@@ -5,7 +5,7 @@ from langchain_core.language_models.llms import LLM
 from pathlib import Path
 from transformers import AutoTokenizer
 
-from codetrans.llm_abstraction import LLAMAFILE_CTX_SIZE
+from codetrans.llm_abstraction import LLAMAFILE_CTX_SIZE, OLLAMA_CTX_SIZE
 from codetrans.postprocessing import comment_syntax, markdown_pl_mapping_bidict
 from codetrans.prompt_templates import (
     direct_translation_template,
@@ -39,18 +39,25 @@ def hf_modelfiles_path_for(model_name: str) -> Path:
         "mistral": Path.joinpath(TORCH_MODELS_PATH, "Mistral-7B-Instruct-v0.1"),
         "mixtral": Path.joinpath(TORCH_MODELS_PATH, "Mixtral-8x7B-Instruct-v0.1"),
         "codellama": Path.joinpath(TORCH_MODELS_PATH, "CodeLlama-70b-hf"),
-        "dolphin-2.6-mistral": Path.joinpath(TORCH_MODELS_PATH, "dolphin-2.6-mistral-7b"),
-        "dolphin-2.7-mixtral": Path.joinpath(TORCH_MODELS_PATH, "dolphin-2.7-mixtral-8x7b"),
-        "dolphincoder-starcoder2-15b": Path.joinpath(TORCH_MODELS_PATH, "dolphincoder-starcoder2-15b"),
+        "dolphin-2.6-mistral": Path.joinpath(
+            TORCH_MODELS_PATH, "dolphin-2.6-mistral-7b"
+        ),
+        "dolphin-2.7-mixtral": Path.joinpath(
+            TORCH_MODELS_PATH, "dolphin-2.7-mixtral-8x7b"
+        ),
+        "dolphincoder-starcoder2-15b": Path.joinpath(
+            TORCH_MODELS_PATH, "dolphincoder-starcoder2-15b"
+        ),
         "dolphin-2.6-phi-2": Path.joinpath(TORCH_MODELS_PATH, "dolphin-2_6-phi-2"),
         "llama3": Path.joinpath(TORCH_MODELS_PATH, "Meta-Llama-3-8B-Instruct"),
         "phi3": Path.joinpath(TORCH_MODELS_PATH, "Phi-3-mini-4k-instruct"),
         "codestral": Path.joinpath(TORCH_MODELS_PATH, "Codestral-22B-v0.1"),
+        "gemma-3": Path.joinpath(TORCH_MODELS_PATH, "gemma-3-27b-it"),
     }
 
     if model_name not in hf_model_paths.keys():
         raise NotImplementedError(
-            f"The model you are trying to use is not available in this library. Model: {model_name}"
+            f"The model you are trying to use is not available in this library. Model: {model_name}. Add it to the hf_model_paths dict in codetrans/llm_abstraction.py"
         )
 
     return hf_model_paths[model_name]
@@ -60,6 +67,9 @@ def apply_chat_template_to_text(text: str, model_name: str) -> str:
     if "codestral" in model_name:
         # The codestral tokenizer does not define a chat template. Codestral uses the same chat template as Mistral. Use that instead.
         tokenizer = AutoTokenizer.from_pretrained(hf_modelfiles_path_for("mistral"))
+    elif "gemma-3" in model_name:
+        # ollama applies the template automatically
+        return text
     else:
         tokenizer = AutoTokenizer.from_pretrained(hf_modelfiles_path_for(model_name))
     if "dolphin" in model_name:
@@ -87,6 +97,14 @@ def check_context_size(text: str, model_name: str) -> int:
 
     total_input_tokens = len(tokens)
     print("Total input tokens:", total_input_tokens)
+    if model_name in LLAMAFILE_CTX_SIZE.keys():
+        model_max_length = LLAMAFILE_CTX_SIZE[model_name]
+    elif model_name in OLLAMA_CTX_SIZE.keys():
+        model_max_length = OLLAMA_CTX_SIZE[model_name]
+    else:
+        raise NotImplementedError(
+            f"The model {model_name} has no defined context length. Please add it to the LLAMAFILE_CTX_SIZE or OLLAMA_CTX_SIZE dictionary."
+        )
     model_max_length = LLAMAFILE_CTX_SIZE[model_name]
     if total_input_tokens >= model_max_length:
         return model_max_length - total_input_tokens
@@ -94,7 +112,9 @@ def check_context_size(text: str, model_name: str) -> int:
     return max_new_tokens
 
 
-def apply_chat_template_to_prompt_template(template: PromptTemplate, model_name: str) -> PromptTemplate:
+def apply_chat_template_to_prompt_template(
+    template: PromptTemplate, model_name: str
+) -> PromptTemplate:
     """Apply a LLMs chat template to the text of a prompt template.
 
     Args:
@@ -108,7 +128,9 @@ def apply_chat_template_to_prompt_template(template: PromptTemplate, model_name:
     return template
 
 
-def create_prompt_template_for_model(template_type: str, model_name: str) -> list[PromptTemplate]:
+def create_prompt_template_for_model(
+    template_type: str, model_name: str
+) -> list[PromptTemplate]:
     """
     Create a prompt template for a given template type and model name.
 
@@ -120,7 +142,9 @@ def create_prompt_template_for_model(template_type: str, model_name: str) -> lis
         list[PromptTemplate]: A list of modified prompt templates that have been embedded with the given chat template.
     """
     prompts = create_prompt_template(template_type)
-    modified_prompts = [apply_chat_template_to_prompt_template(p, model_name) for p in prompts]
+    modified_prompts = [
+        apply_chat_template_to_prompt_template(p, model_name) for p in prompts
+    ]
     return modified_prompts
 
 
@@ -144,13 +168,22 @@ def create_prompt_template(template_type: str) -> list[PromptTemplate]:
             input_var = ["source_code", "source_pl"]
             template_2 = via_description_translation_template_2
             input_var_2 = ["description", "target_pl"]
-            prompts.append(PromptTemplate(template=template_2, input_variables=input_var_2))
+            prompts.append(
+                PromptTemplate(template=template_2, input_variables=input_var_2)
+            )
         case "via_description_1_shot":
             template = via_description_translation_template_1_w_example
-            input_var = ["source_code", "source_pl", "example_description", "example_source_code"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "example_description",
+                "example_source_code",
+            ]
             template_2 = via_description_translation_template_2
             input_var_2 = ["description", "target_pl"]
-            prompts.append(PromptTemplate(template=template_2, input_variables=input_var_2))
+            prompts.append(
+                PromptTemplate(template=template_2, input_variables=input_var_2)
+            )
         case "allowing_questions":
             template = translation_allowing_questions_template
             input_var = ["source_code", "source_pl", "target_pl"]
@@ -165,25 +198,70 @@ def create_prompt_template(template_type: str) -> list[PromptTemplate]:
             input_var = ["source_code", "source_pl", "target_pl"]
         case "controlled_md":
             template = controlled_md_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "target_pl_comment"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "target_pl_comment",
+            ]
         case "direct_md":
             template = direct_md_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "target_pl_comment"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "target_pl_comment",
+            ]
         case "controlled_md_no_system":
             template = controlled_md_no_system_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "target_pl_comment"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "target_pl_comment",
+            ]
         case "short_md":
             template = short_md_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "target_pl_comment"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "target_pl_comment",
+            ]
         case "compile_runtime_error_evalplus":
             template = compile_runtime_error_evalplus_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "translated_code", "stderr"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "translated_code",
+                "stderr",
+            ]
         case "compile_runtime_error":
             template = compile_runtime_error_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "translated_code", "stderr"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "translated_code",
+                "stderr",
+            ]
         case "test_failure_evalplus":
             template = test_failure_evalplus_template
-            input_var = ["source_code", "source_pl", "target_pl", "target_pl_md", "translated_code", "stderr"]
+            input_var = [
+                "source_code",
+                "source_pl",
+                "target_pl",
+                "target_pl_md",
+                "translated_code",
+                "stderr",
+            ]
         case "test_failure_io_based":
             template = test_failure_io_based_template
             input_var = [
@@ -269,7 +347,9 @@ def create_and_invoke_llm_chain(
         A dictionary containing the translated source code and its corresponding source code in the specified languages.
     """
     # create prompt template > LLM chain
-    chain = LLMChain(prompt=prompt, llm=llm, output_key="target_code")  # the same as:  prompt | llm
+    chain = LLMChain(
+        prompt=prompt, llm=llm, output_key="target_code"
+    )  # the same as:  prompt | llm
     # Invoke the chain
     return chain.invoke(
         {
@@ -354,7 +434,13 @@ def create_and_invoke_via_description_w_example_chain(
     # Combine the first and the second chain
     overall_chain = SequentialChain(
         chains=[chain_one, chain_two],
-        input_variables=["source_code", "source_pl", "target_pl", "example_description", "example_source_code"],
+        input_variables=[
+            "source_code",
+            "source_pl",
+            "target_pl",
+            "example_description",
+            "example_source_code",
+        ],
         output_variables=["description", "target_code"],
         verbose=True,
     )
