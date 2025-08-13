@@ -1,4 +1,5 @@
-base_dir: 'set the absolute path to codetransbenchmark'
+# base_dir: 'set the absolute path to codetransbenchmark, below ist the default for the Docker container'
+base_dir: /home/llm-code-translation/codetransbenchmark
 output_dir: output
 dataset_dir: dataset
 config_dir: config

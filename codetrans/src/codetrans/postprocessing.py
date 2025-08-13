@@ -8,7 +8,9 @@ from enum import Enum
 
 logger = logging.getLogger(__name__)
 
-PROGRAMMING_LANGUAGES = set(["Python", "Java", "C#", "C", "C++", "Rust", "Go", "JavaScript", "Delphi"])
+PROGRAMMING_LANGUAGES = set(
+    ["Python", "Java", "C#", "C", "C++", "Rust", "Go", "JavaScript", "Delphi"]
+)
 
 
 class TextStatus(Enum):
@@ -61,7 +63,9 @@ def is_code_line(text_line: str, line_number: int, language: str):
     )
 
     # snake_case in text
-    indicators += len(regex.findall(r"([a-z]+(?:_[a-z]+)+)|([A-Z]+(?:_[A-Z]+)+)", text_line))
+    indicators += len(
+        regex.findall(r"([a-z]+(?:_[a-z]+)+)|([A-Z]+(?:_[A-Z]+)+)", text_line)
+    )
 
     # keywords in text
     indicators += sum(
@@ -174,7 +178,12 @@ def is_code_line(text_line: str, line_number: int, language: str):
     if any(text_line.lstrip().startswith(word) for word in startswith_list):
         indicators = -20
 
-    logger.debug(f"line {line_number}: {indicators}", "||", text_line.removesuffix("\n"))
+    if text_line.strip().startswith("**") and text_line.strip().endswith("**"):
+        indicators = -20
+
+    logger.debug(
+        f"line {line_number}: {indicators}", "||", text_line.removesuffix("\n")
+    )
     # print(f"line {line_number}: {indicators}", "||", text_line.removesuffix("\n"))
 
     # check threshold
@@ -230,7 +239,9 @@ def comment_syntax(language: str) -> list[str]:
         comment[l] = ["//", "/*"]
 
     if language not in comment.keys():
-        raise NotImplementedError(f"There is no comment syntax implemented for the programming language {language}.")
+        raise NotImplementedError(
+            f"There is no comment syntax implemented for the programming language {language}."
+        )
 
     return comment[language]
 
@@ -240,10 +251,14 @@ def semicolon_syntax(language: str) -> bool:
         return False
     if language in ["Java", "Go", "Rust", "C", "C++", "C#"]:
         return True
-    raise NotImplementedError(f"Whether the programming language {language} uses semicolons is not implemented.")
+    raise NotImplementedError(
+        f"Whether the programming language {language} uses semicolons is not implemented."
+    )
 
 
-def fix_escaped_underscores(text: str, report_change: bool = False) -> str | tuple[str, bool]:
+def fix_escaped_underscores(
+    text: str, report_change: bool = False
+) -> str | tuple[str, bool]:
     # important do not change paths: path\to\__file__
     pattern = regex.compile(r"\\_(?!_)")
     fixed = regex.sub(pattern, "_", text)
@@ -271,7 +286,8 @@ def extract_markdown_code_blocks(text: str) -> list[tuple[str, str]]:
     The language is optional.
     """
     pattern = regex.compile(
-        r"(?:`{3}([\w]*)\n([\S\s]+?\n)`{3})|(?:~{3}([\w]*)\n([\S\s]+?\n)~{3})",
+        # r"(?:`{3}([\w]*)\n([\S\s]+?\n)`{3})|(?:~{3}([\w]*)\n([\S\s]+?\n)~{3})",
+        r"(?:`{3}([\w]*)\n([\s\S]*?)(?<!`)\n?`{3})|(?:~{3}([\w]*)\n([\s\S]*?)(?<!~)\n?~{3})",
         regex.DOTALL | regex.MULTILINE,
     )
 
@@ -309,7 +325,11 @@ def extract_markdown_code_blocks_with_pl(text: str, language: str) -> list[str]:
 
     extracted_blocks = extract_markdown_code_blocks(text)
 
-    result = [block for block_language, block in extracted_blocks if block_language == markdown_languages[language]]
+    result = [
+        block
+        for block_language, block in extracted_blocks
+        if block_language == markdown_languages[language]
+    ]
 
     return result
 
@@ -425,7 +445,7 @@ def repeated_lines(text: str, max_repeat: int) -> str:
     return text
 
 
-def postprocessing_chain_complex(text: str, language: str):
+def postprocessing_chain_complexer_old(text: str, language: str):
     report = []
     # sanitised = remove_additional_translations(text, language)
     # if sanitised != text:
@@ -473,7 +493,9 @@ def check_text_before_first_code_marker(text: str, language: str) -> TextStatus:
         return is_code(before_first_code_tag)  #########
     else:
         # the markdown code fence has no language tag
-        if before_first_code_tag == text.rstrip().removesuffix("```").removesuffix("~~~"):
+        if before_first_code_tag == text.rstrip().removesuffix("```").removesuffix(
+            "~~~"
+        ):
             # code fence only at the end of the text
             status = is_code(before_first_code_tag, language)
             if status == TextStatus.CODE:
@@ -497,7 +519,9 @@ def text_before_first_code_marker(text: str) -> str:
 def text_before_first_code_marker_with_tag(text: str, language: str) -> str:
     tag = markdown_pl_mapping_bidict()[language]
     code_fence_with_pl_tag = r"(?:^`{3}" + tag + r")|(?:^~{3}" + tag + r")"
-    before_first_pl_tag = regex.split(code_fence_with_pl_tag, text, flags=regex.MULTILINE)[0]
+    before_first_pl_tag = regex.split(
+        code_fence_with_pl_tag, text, flags=regex.MULTILINE
+    )[0]
     return before_first_pl_tag
 
 
@@ -507,10 +531,14 @@ def is_code_between_code_markers(text: str, language: str, tagged: bool = False)
     tag = markdown_pl_mapping_bidict()[language]
     code_fence_with_pl_tag = r"(?:^`{3}" + tag + r")|(?:^~{3}" + tag + r")"
     pattern = code_fence_with_pl_tag if tagged else code_fence
-    after_first_code_fence = regex.split(pattern, text, maxsplit=1, flags=regex.MULTILINE)[1]
+    after_first_code_fence = regex.split(
+        pattern, text, maxsplit=1, flags=regex.MULTILINE
+    )[1]
 
     # check if code until next ```
-    blocks = regex.split(pattern, after_first_code_fence, maxsplit=1, flags=regex.MULTILINE)
+    blocks = regex.split(
+        pattern, after_first_code_fence, maxsplit=1, flags=regex.MULTILINE
+    )
     next_block = blocks[0]
     if len(blocks) == 1 and tagged:
         if is_code(next_block, language) == TextStatus.CODE:
@@ -527,7 +555,10 @@ def code_fence_in_code(text: str, language: str):
 
     text_blocks = list(filter(lambda b: b != "", text_blocks))
     # set the threshold to 2 as this means that two code fences were found
-    return all(is_code(b, language) == TextStatus.CODE for b in text_blocks) and len(text_blocks) > 2
+    return (
+        all(is_code(b, language) == TextStatus.CODE for b in text_blocks)
+        and len(text_blocks) > 2
+    )
 
 
 class Balance(Enum):
@@ -580,13 +611,17 @@ def check_balance_of_code_fences(text: str, language: str) -> set[Balance]:
             after = regex.split(r"```[\s]+", text)[1]
             scores_before = code_scoring_for(before, language)
             scores_after = code_scoring_for(after, language)
-            if (scores_before[0] > scores_after[0] or (scores_before[1] > 0 > scores_after[1])) or after.strip() == "":
+            if (
+                scores_before[0] > scores_after[0]
+                or (scores_before[1] > 0 > scores_after[1])
+            ) or after.strip() == "":
                 # CODE
                 # ```
                 # NOT CODE
                 report.add(Balance.OPENING_MISSING)
             elif before.strip() == "" and (
-                scores_before[0] < scores_after[0] or (scores_before[1] < 0 < scores_after[1])
+                scores_before[0] < scores_after[0]
+                or (scores_before[1] < 0 < scores_after[1])
             ):
                 # ```
                 # CODE
@@ -641,8 +676,13 @@ def delete_natural_text_from(text: str, target_pl: str = None):
             "And ",
             "Let's ",
             "Let me ",
+            "* The ",
+            "- The ",
         ]
         if any(line.lstrip().startswith(word) for word in startswith_list):
+            # skip this line
+            continue
+        if regex.match(r"^\*\*[A-Z][^\n\*]*\*\*$", line):
             # skip this line
             continue
         startswith_list = [
@@ -657,7 +697,9 @@ def delete_natural_text_from(text: str, target_pl: str = None):
             "Finally",
         ]
         if target_pl is not None:
-            startswith_list += [f"{pl} Code" for pl in pl_not_target] + [f"{pl} code" for pl in pl_not_target]
+            startswith_list += [f"{pl} Code" for pl in pl_not_target] + [
+                f"{pl} code" for pl in pl_not_target
+            ]
         if any(line.lstrip().startswith(word) for word in startswith_list):
             # skip this line and the following lines
             break
@@ -683,7 +725,9 @@ def remove_additional_translations(text: str, target_pl: str) -> str:
     return "\n".join(valid_lines)
 
 
-def postprocessing_chain(text: str, language: str) -> tuple[str, list[PostprocessingStep]]:
+def postprocessing_chain(
+    text: str, language: str
+) -> tuple[str, list[PostprocessingStep]]:
     report = []
     sanitised = remove_additional_translations(text, language)
     if sanitised != text:
@@ -812,7 +856,9 @@ if __name__ == "__main__":
 
     file = "..\initial_experiments\human_eval_phi-2\HumanEval_33.py"
     file = "..\initial_experiments\human_eval_phi-2\HumanEval_53.py"
-    file = Path("C:\home\ma_code\codetransbenchmark\output\llamafile_mixtral_LIT\codenet\Java\Python\s745776078.py")
+    file = Path(
+        "C:\home\ma_code\codetransbenchmark\output\llamafile_mixtral_LIT\codenet\Java\Python\s745776078.py"
+    )
 
     # with open(file, "r") as f:
     #     for ix, line in enumerate(f.readlines()):
